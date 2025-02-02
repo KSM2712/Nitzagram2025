@@ -31,17 +31,17 @@ class Post:
         screen.blit(text_like, [LIKE_TEXT_X_POS, LIKE_BUTTON_Y_POS])
 
     def display_username(self):
-        font = pygame.font.SysFont('chalkduster.ttf', 18)
+        font = pygame.font.SysFont('chalkduster.ttf', UI_FONT_SIZE)
         user_text = font.render(self.username, True, BLACK)
         screen.blit(user_text, [USER_NAME_X_POS, USER_NAME_Y_POS])
 
     def display_location(self):
-        font = pygame.font.SysFont('chalkduster.ttf', 18)
+        font = pygame.font.SysFont('chalkduster.ttf', UI_FONT_SIZE)
         user_text = font.render(self.location, True, LIGHT_GRAY)
         screen.blit(user_text, [LOCATION_TEXT_X_POS, LOCATION_TEXT_Y_POS])
 
     def display_discription(self):
-        font = pygame.font.SysFont('chalkduster.ttf', 18)
+        font = pygame.font.SysFont('chalkduster.ttf', UI_FONT_SIZE)
         user_text = font.render(self.description, True, BLACK)
         screen.blit(user_text, [DESCRIPTION_TEXT_X_POS, DESCRIPTION_TEXT_Y_POS])
 
