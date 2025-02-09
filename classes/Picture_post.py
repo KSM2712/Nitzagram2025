@@ -1,7 +1,5 @@
 import pygame.image
-
 from Post import *
-
 
 class Picture(Post):
     def __init__(self, username, location, description, image_path):

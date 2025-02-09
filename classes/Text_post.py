@@ -1,7 +1,5 @@
-import pygame
 from Post import *
 from helpers import *
-
 
 class Text(Post):
     def __init__(self, username, location, description, text, text_color, background_color):
@@ -15,8 +13,8 @@ class Text(Post):
         self.display_text()
 
     def display_text(self):
-        square = pygame.Rect(POST_X_POS,POST_Y_POS,POST_WIDTH,POST_HEIGHT)
-        pygame.draw.rect(screen,self.background_color,square)
+        square = pygame.Rect(POST_X_POS, POST_Y_POS, POST_WIDTH, POST_HEIGHT)
+        pygame.draw.rect(screen, self.background_color, square)
         for i in range(len(self.text_array)):
             text_font = pygame.font.SysFont('chalkduster.ttf', TEXT_POST_FONT_SIZE)
             text_display = text_font.render(self.text_array, True, self.text_color)
