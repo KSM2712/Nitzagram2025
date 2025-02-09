@@ -1,5 +1,5 @@
 import pygame.image
-from Post import *
+from classes.Post import *
 
 
 class PicturePost(Post):

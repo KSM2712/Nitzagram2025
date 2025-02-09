@@ -1,4 +1,4 @@
-from Post import *
+from classes.Post import *
 from helpers import *
 
 

@@ -28,7 +28,7 @@ class Post:
     def display_likes(self):
         font = pygame.font.SysFont('chalkduster.ttf', 18)
         text_like = font.render(f"Liked by {self.likes_counter} users", True, BLACK)
-        screen.blit(text_like, [LIKE_TEXT_X_POS, LIKE_BUTTON_Y_POS])
+        screen.blit(text_like, [LIKE_TEXT_X_POS, LIKE_TEXT_Y_POS])
 
     def display_username(self):
         font = pygame.font.SysFont('chalkduster.ttf', UI_FONT_SIZE)
