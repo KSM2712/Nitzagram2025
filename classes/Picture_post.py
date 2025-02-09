@@ -2,7 +2,7 @@ import pygame.image
 from Post import *
 
 
-class Picture(Post):
+class PicturePost(Post):
     def __init__(self, username, location, description, image_path):
         super().__init__(username, location, description)
         self.image = pygame.image.load(image_path)

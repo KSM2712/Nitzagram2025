@@ -1,7 +1,8 @@
 import pygame
 from helpers import screen
 from constants import WINDOW_WIDTH, WINDOW_HEIGHT, BLACK
-
+from classes.Picture_post import *
+from classes.Text_post import *
 
 def main():
     # Set up the game display, clock and headline
@@ -15,7 +16,11 @@ def main():
     background = pygame.transform.scale(background,
                                         (WINDOW_WIDTH, WINDOW_HEIGHT))
 
-    # TODO: add a post here
+    p1 = PicturePost("karin1", "Tel Aviv", ":)))", "Images/noa_kirel.jpg")
+    p2 = PicturePost("Ira1", "haifa", "yayyy", "Images/ronaldo.jpg")
+    p3 = TextPost("Esti1", "Eilat", "life quotes", "the sun is shining", [180, 74, 255], [250, 200, 72])
+
+
 
     running = True
     while running:
