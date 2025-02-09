@@ -1,4 +1,6 @@
 import pygame
+
+from classes.Comment import Comment
 from helpers import screen
 from buttons import *
 
@@ -23,7 +25,7 @@ class Post:
         self.likes_counter += 1
 
     def add_comments(self, text):
-        self.comments.append(text)
+        self.comments.append(Comment(text))
 
     def display_likes(self):
         font = pygame.font.SysFont('chalkduster.ttf', 18)

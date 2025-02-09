@@ -18,6 +18,6 @@ class TextPost(Post):
         pygame.draw.rect(screen, self.background_color, square)
         for i in range(len(self.text_array)):
             text_font = pygame.font.SysFont('chalkduster.ttf', TEXT_POST_FONT_SIZE)
-            text_display = text_font.render(self.text_array, True, self.text_color)
+            text_display = text_font.render(self.text_array[i], True, self.text_color)
             x = center_text(len(self.text_array), text_display, i)
             screen.blit(text_display, x)

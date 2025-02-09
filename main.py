@@ -42,8 +42,12 @@ def main():
                         current_post_index += 1
                     else:
                         current_post_index = 0
+                    current_post = posts[current_post_index]
                 elif mouse_in_button(like_button, pos):
                     current_post.add_like()
+                elif mouse_in_button(comment_button,pos):
+                    comment = read_comment_from_user()
+                    current_post.add_comments(comment)
 
         # Display the background, presented Image, likes, comments, tags and location(on the Image)
         screen.fill(BLACK)
