@@ -2,6 +2,7 @@ import pygame
 from helpers import screen
 from buttons import *
 
+
 class Post:
     def __init__(self, username, location, description):
         self.username = username

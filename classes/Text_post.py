@@ -1,6 +1,7 @@
 from Post import *
 from helpers import *
 
+
 class Text(Post):
     def __init__(self, username, location, description, text, text_color, background_color):
         super().__init__(username, location, description)
